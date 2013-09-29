@@ -1,13 +1,15 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
-{
-int i=0;
-char ch;
-clrscr();
-for(i=0;i<256;i++)
-  {
-    printf("%c ",ch);
-    ch = ch + 1;
-  }
-}
+    #include <stdio.h>
+     
+    int main(void)
+    {
+    unsigned char c;
+     
+    for ( c=0; ; c++ )
+    {
+    printf( "%03d %c\n", c, c );
+    if ( c == 255 )
+    break;
+    }
+     
+    return (0);
+    }
